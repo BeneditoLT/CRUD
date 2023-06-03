@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const PORT = 3000;
+const PORT = 4001;
 // get the client
 const mysql = require('mysql2');
 
@@ -20,10 +20,12 @@ connection.connect();
         res.send(results.map(item => ({ name: item.name, price: item.price })))
       })
       
-      app.listen(3000)
+      app.listen(4001)
  
 
-    //res.send(results.map(item => ({ name: item.name, price: item.price })));
+    
   });
+  
+
 
 
