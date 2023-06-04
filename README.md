@@ -12,7 +12,8 @@ Acesse a pasta raíz do projeto e construa cada imagem (MySQL, Node API e PHP):
 ```html
 docker build -t mysql-image -f api/db/Dockerfile .
 ```
-```html docker build -t node-image -f api/Dockerfile .```
+```html docker build -t node-image -f api/Dockerfile .
+```
 ```html docker build -t php-image -f website/Dockerfile .```
 Rodando os containers
 Na pasta raíz do projeto, execute um de cada vez:
