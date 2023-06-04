@@ -9,7 +9,9 @@ Com isso instalamos as dependências Node que precisamos. Estou utilizando Node 
 Construindo as imagens
 Acesse a pasta raíz do projeto e construa cada imagem (MySQL, Node API e PHP):
 
+```html
 docker build -t mysql-image -f api/db/Dockerfile .
+```
 docker build -t node-image -f api/Dockerfile .
 docker build -t php-image -f website/Dockerfile .
 Rodando os containers
