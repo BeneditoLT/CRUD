@@ -1,6 +1,6 @@
 <h1> # CRUD </h1>
 
-Instalando dependências
+<h2>Instalando dependências</h2>
 Acesse a pasta ./api no terminal e execute:
 
 npm install
