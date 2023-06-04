@@ -22,9 +22,16 @@ Rodando os containers
 Na pasta raíz do projeto, execute um de cada vez:
 
 ```html 
-background-color: blueviolet>docker run -d -v $(pwd)/api/db/data:/var/lib/mysql --rm --name mysql-container mysql-image ```
+background-color: blueviolet>docker run -d -v $(pwd)/api/db/data:/var/lib/mysql --rm --name mysql-container mysql-image
+```
 
-```html docker run -d -v $(pwd)/api:/home/node/app -p 9001:9001 --link mysql-container --rm --name node-container node-image ```
-```html docker run -d -v "$(pwd)/website":/var/www/html -p 8888:80 --link node-container --rm --name php-container php-image ```
+```html 
+docker run -d -v $(pwd)/api:/home/node/app -p 9001:9001 --link mysql-container --rm --name node-container node-image 
+```
+```html 
+docker run -d -v "$(pwd)/website":/var/www/html -p 8888:80 --link node-container --rm --name php-container php-image 
+```
 Agora faça o restore do banco:
-```html docker exec -i mysql-container mysql -uroot -pprogramadorabordo < api/db/script.sql ```
+```html
+docker exec -i mysql-container mysql -uroot -pprogramadorabordo < api/db/script.sql 
+```
