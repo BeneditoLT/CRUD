@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const PORT = 4001;
-// get the client
+// get the client node
 const mysql = require('mysql2');
 
 // create the connection to database
